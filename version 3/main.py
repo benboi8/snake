@@ -125,9 +125,6 @@ class Snake:
 		for piece in Snake.body:
 			piece.Draw()
 
-		for rect in Snake.body_positions:
-			pg.draw.rect(screen, white, rect)
-
 	def Update():
 		Snake.CheckBounds()
 		Snake.CheckForBody()
